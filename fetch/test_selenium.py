@@ -33,7 +33,7 @@ chromeOptions = webdriver.ChromeOptions()
 # chromeOptions.add_experimental_option("prefs",prefs)
 
 chromeOptions.add_experimental_option("prefs", {
-  "download.default_directory": r"C:/Users/asus/Desktop/Neon", #<-------------------------- set directory
+  "download.default_directory": r"root/data", #<-------------------------- set directory
   "download.prompt_for_download": False,
   "download.directory_upgrade": True,
   "safebrowsing.enabled": True
@@ -56,11 +56,6 @@ date = [
 		 ('1/01/2016' , '31/12/2016') ,  
 		 ('1/01/2017' , '31/12/2017') , 
 	   ]
-
-path = "C:/Users/asus/Desktop/Neon"
-extension = 'csv'
-os.chdir(path)
-Item_Data = glob.glob("Item_Data.csv*")
 
 
 #Start
